@@ -1,5 +1,5 @@
 # gccr - Shortcut compiler for C
-A little shortcut to not be overloaded with binary files when compiling with gcc.
+A little shortcut to not be overloaded with binary files when compiling with **gcc** on **unix**.
 
 gccr stands for "gcc run", it compiles the file given with gcc, execute the file and deletes the executable, avoiding you to be overloaded with two files for every program you write.
 
@@ -25,11 +25,17 @@ If you are not in the same folder you have to specify the path to the file.
 - v0.1
   - In the current version arguments that has to be passed to the file are not   supported.
   - There could be some issues during installation, if so:
-    - Try to delete the folder gccr that you have downloaded using ```rm - r gccr``` answering ```y``` EVERY TIME. If you miss one ```y``` repeat this step.
-    - Run again the installation
+    1. Check if you are admin by running ```sudo echo ok``` and enter your password, if it prints *ok* you are admin.
+    2. Run again the installation command
+    3. Try to delete the folder gccr that you have downloaded using ```rm - r gccr``` answering ```y``` EVERY TIME. If you miss one ```y``` repeat this step.
+    4. Run again the installation
+    5. Try re installing gcc by running: ```sudo apt update``` and ```sudo apt install build-essential```
+    6. Repeat from passage 1
 
 For every other issue contact me: andrea18500@hotmail.it
 
 # Versions
 - v0.1
-  - First version.
+  - First version
+  - Basic features
+  - Work only on unix (tested on ubuntu, raspbian and wsl)
