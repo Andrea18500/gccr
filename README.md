@@ -1,16 +1,17 @@
 # gccr - Shortcut compiler for C
 A little shortcut to not be overloaded with binary files when compiling with **gcc** on **unix**.
 
-gccr stands for "gcc run", it compiles the file given with gcc, execute the file and deletes the executable, avoiding you to be overloaded with two files for every program you write.
+gccr stands for "gcc run", it compiles the file given to gcc, execute the executable and deletes the it, avoiding you to be overloaded with two files for every program you write.
 
 ## How to Install
 A folder will be downladed, after the installation you can delete it.
-Execute the following command in your bash, you can be in whatever directory you want.
+Execute the following command in your terminal, you can be in whatever directory you want.
 ```
 git clone https://github.com/Andrea18500/gccr.git && chmod u+x gccr/installer.sh && gccr/installer.sh
 ```
-Then **close every terminal** you have opened.
-Done.
+Then **restart the terminal**.
+
+Installation completed.
 
 If something went wrong check the *issues* section first and then write me at this email: andrea18500@hotmail.it
 
