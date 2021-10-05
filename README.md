@@ -9,7 +9,7 @@ Execute the following command in your bash, you can be in whatever directory you
 ```
 git clone https://github.com/Andrea18500/gccr.git && chmod u+x gccr/installer.sh && gccr/installer.sh
 ```
-Then close every terminal you have opened.
+Then **close every terminal** you have opened.
 Done.
 
 If something went wrong check the *issues* section first and then write me at this email: andrea18500@hotmail.it
