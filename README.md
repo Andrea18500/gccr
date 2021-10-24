@@ -28,7 +28,7 @@ If you are not in the same folder you have to specify the path to the file.
   - There could be some issues during installation, if so:
     1. Check if you are admin by running ```sudo echo ok``` and enter your password, if it prints *ok* you are admin.
     2. Run again the installation command
-    3. Try to delete the folder gccr that you have downloaded using ```rm - r gccr``` answering ```y``` EVERY TIME. If you miss one ```y``` repeat this step.
+    3. Try to delete the folder gccr that you have downloaded using ```rm -rf gccr``` answering ```y``` EVERY TIME. If you miss one ```y``` repeat this step.
     4. Run again the installation
     5. Try re installing gcc by running: ```sudo apt update``` and ```sudo apt install build-essential```
     6. Repeat from passage a
