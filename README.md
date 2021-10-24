@@ -7,7 +7,7 @@ gccr stands for "gcc run", it compiles the file given to gcc, execute the execut
 A folder will be downladed, after the installation you can delete it.
 Execute the following command in your terminal, you can be in whatever directory you want.
 ```
-git clone https://github.com/Andrea18500/gccr.git && chmod u+x gccr/installer.sh && gccr/installer.sh
+sudo apt install gcc && git clone https://github.com/Andrea18500/gccr.git && chmod u+x gccr/installer.sh && gccr/installer.sh
 ```
 Then **restart the terminal**.
 
