@@ -7,4 +7,4 @@
 
 suff=".c"
 output=${1%$suff}
-gcc $1 -o $output && ./$output && rm $output
+gcc $1 -o $output && ./$output $2 $3 $4 $5 && rm $output
