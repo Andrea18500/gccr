@@ -35,7 +35,7 @@ If you are not in the same folder you have to specify the path to the file.
 For every other issue contact me: andrea18500@hotmail.it
 
 # Versions
--v0.2
+- v0.2
   - Added support for up to 4 arguments
 - v0.1
   - First version
