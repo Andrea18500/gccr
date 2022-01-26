@@ -30,7 +30,7 @@ If you are not in the same folder you have to specify the path to the file.
     3. Try to delete the folder gccr that you have downloaded using ```rm -rf gccr```.
     4. Run again the installation
     5. Try re installing gcc by running: ```sudo apt update``` and ```sudo apt install build-essential```
-    6. Repeat from passage 1.
+    6. Repeat from passage a.
 
 For every other issue contact me: andrea18500@hotmail.it
 
