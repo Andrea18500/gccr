@@ -11,7 +11,7 @@ sudo apt install gcc && git clone https://github.com/Andrea18500/gccr.git && chm
 ```
 Then **restart the terminal**.
 
-Installation completed.
+The installation is completed.
 
 If something went wrong check the *issues* section first and then write me at this email: andrea18500@hotmail.it
 
@@ -27,7 +27,7 @@ From version 0.3 is possible to send **up to four arguments in total**, to both 
 - Arguments without the "+" will be sent to the *program*.
 Example
 ```
-gccr path/to/name_of_your_file.c -lm file_input.txt file_output.txt
+gccr path/to/name_of_your_file.c +lm file_input.txt file_output.txt
 ```
 
 ## Issues
