@@ -22,6 +22,14 @@ gccr name_of_your_file.c
 ```
 If you are not in the same folder you have to specify the path to the file.
 
+From version 0.3 is possible to send **up to four arguments in total**, to both the compiler (gcc) and your program:
+- Arguments that have to be passed to the *compiler* must start with "+" instead of the usual "-".
+- Arguments without the "+" will be sent to the *program*.
+Example
+```
+gccr path/to/name_of_your_file.c -lm file_input.txt file_output.txt
+```
+
 ## Issues
 - v0.2
   - There could be some issues during installation, if so:
@@ -35,6 +43,8 @@ If you are not in the same folder you have to specify the path to the file.
 For every other issue contact me: andrea18500@hotmail.it
 
 # Versions
+- v0.3
+  - Added support for up to 4 arguments in total. Now arguments starting with "+" instead of "-" will be send to the compiler. Arguments without the "+" will be sent to the program.
 - v0.2
   - Added support for up to 4 arguments
 - v0.1
