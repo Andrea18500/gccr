@@ -31,7 +31,7 @@ gccr path/to/name_of_your_file.c +lm file_input.txt file_output.txt
 ```
 
 ## Issues
-- v0.2
+- v0.3
   - There could be some issues during installation, if so:
     1. Check if you are admin by running ```sudo echo ok``` and enter your password, if it prints *ok* you are admin.
     2. Run again the installation command
