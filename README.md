@@ -4,16 +4,14 @@ A little shortcut to not be overloaded with binary files when compiling with **g
 gccr stands for "gcc run", it compiles the file given to gcc, execute the executable, add the arguments passed and deletes the it, avoiding you to be overloaded with two files for every program you write.
 
 ## How to Install
-A folder will be downladed, after the installation you can delete it.
-Execute the following command in your terminal, you can be in whatever directory you want.
+Simply compy and paste this command and press enter (^.^)
+Executing the following command in your terminal will run the installer, you can be in whatever directory you want.
 ```
 sudo apt install gcc && git clone https://github.com/Andrea18500/gccr.git && chmod u+x gccr/installer.sh && gccr/installer.sh
 ```
-Then **restart the terminal**.
-
 The installation is completed.
 
-If something went wrong check the *issues* section first and then write me at this email: andrea18500@hotmail.it
+If something went wrong **restart the terminal** first, then check the *issues* section. If nothing works write me at this email: andrea18500@hotmail.it
 
 ## How to use
 The format of the command is simply:
@@ -35,7 +33,7 @@ gccr path/to/name_of_your_file.c +lm file_input.txt file_output.txt
   - There could be some issues during installation, if so:
     1. Check if you are admin by running ```sudo echo ok``` and enter your password, if it prints *ok* you are admin.
     2. Run again the installation command
-    3. Try to delete the folder gccr that you have downloaded using ```rm -rf gccr```.
+    3. Try to delete the folder gccr that you have downloaded using ```rm -r -f gccr```.
     4. Run again the installation
     5. Try re installing gcc by running: ```sudo apt update``` and ```sudo apt install build-essential```
     6. Repeat from passage a.
@@ -43,6 +41,8 @@ gccr path/to/name_of_your_file.c +lm file_input.txt file_output.txt
 For every other issue contact me: andrea18500@hotmail.it
 
 # Versions
+- v0.3.1
+  - Upgraded the installer. Added a new update feature. From now on pasting the same command as the installation will run an utility that will automate the process.
 - v0.3
   - Added support for up to 4 arguments in total. Now arguments starting with "+" instead of "-" will be send to the compiler. Arguments without the "+" will be sent to the program.
 - v0.2
