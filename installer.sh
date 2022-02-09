@@ -21,7 +21,7 @@ fi
 echo "Installing config files in ''${LOCAL_DIR}''..."
 
 if [ -f "$LOCAL_FILE" ]; then
-    if ! grep -q "$TEMP_BASHRC_COMMAND" "$LOCAL_FILE"; then
+    if ! grep -q "alias gccr='bash ~/bash_scripts/gccr.sh'" "$LOCAL_FILE"; then
         echo "Adding gccr to the list of commands..."
         printf "$TEMP_BASHRC_COMMAND" >> "$LOCAL_FILE"
     else
