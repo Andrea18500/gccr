@@ -11,7 +11,7 @@ TEMP_BASHRC_COMMAND="\n\n# Alias for the shortcut gccr\nalias gccr='bash ~/bash_
 flag=true
 
 if [ -d "$LOCAL_DIR" ]; then
-    echo "Installation files exists. Checking for possible errors..."
+    echo "Installation files exist. Checking for possible errors..."
 else
   ###  Control will jump here if $DIR does NOT exists ###
   echo "''${LOCAL_DIR}'' not found. Creating directory..."
@@ -36,7 +36,7 @@ else
     exit 1
 fi
 
-echo "Do you wanna delete the installation folder : ''$TEMP_DIR''? [Y/n]"
+echo "Do you wanna delete the installation folder : ''$TEMP_DIR/gccr''? [Y/n]"
 read input
 
 while $flag;
