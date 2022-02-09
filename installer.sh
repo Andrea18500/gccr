@@ -21,14 +21,14 @@ fi
 echo "Installing config files in ''${LOCAL_DIR}''..."
 
 if [ -f "$LOCAL_FILE" ]; then
-    if ! grep -q $TEMP_BASHRC_COMMAND "$LOCAL_FILE"; then
+    if ! grep -q "$TEMP_BASHRC_COMMAND" "$LOCAL_FILE"; then
         echo "Adding gccr to the list of commands..."
         printf "$TEMP_BASHRC_COMMAND" >> "$LOCAL_FILE"
     else
         echo "UPDATING PREVIOUS INSTALLATION..."
     fi
     
-    cp "$TEMP_GCCR $LOCAL_DIR"
+    cp "$TEMP_GCCR" "$LOCAL_DIR"
     echo "gccr installed successfully"
         
 else 
@@ -42,15 +42,15 @@ read input
 while $flag;
 do
 	if [[ $input == "Y" || $input == "y" ]]; then
-        rm -r -f -- "$TEMP_DIR"
-        flag=true
+        rm -r -f -- "$TEMP_DIR/gccr"
+        flag=false
         echo "Installation folder removed"
     elif [[ $input == "N" || $input == "n" ]]; then
-        flag=true
+        flag=false
         echo "Installation folder not removed"
     else
-        flag=false
-        echo "Option not valid.\nDo you wanna delete the installation folder: ''$TEMP_DIR''? [Y/n]"
+        flag=true
+        echo "Option not valid. Do you wanna delete the installation folder: ''$TEMP_DIR''? [Y/n]"
     fi
 done
 echo "Installation completed."
