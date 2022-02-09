@@ -8,14 +8,14 @@ LOCAL_FILE="~/.bashrc"
 TEMP_DIR=$(pwd)
 TEMP_GCCR="gccr/gccr.sh"
 TEMP_BASHRC_COMMAND="\n\n# Alias for the shortcut gccr\nalias gccr='bash ~/bash_scripts/gccr.sh'"
-flag = true
+flag=true
 
 if [ -d "$LOCAL_DIR" ]; then
     echo "Installation files exists. Checking for possible errors..."
 else
   ###  Control will jump here if $DIR does NOT exists ###
-  echo "''${DIR}'' not found. Creating directory..."
-  mkdir $DIR
+  echo "''${LOCAL_DIR}'' not found. Creating directory..."
+  mkdir "$LOCAL_DIR"
 fi
 
 echo "Installing config files in ''${LOCAL_DIR}''..."
@@ -23,12 +23,12 @@ echo "Installing config files in ''${LOCAL_DIR}''..."
 if [ -f "$LOCAL_FILE" ]; then
     if ! grep -q $TEMP_BASHRC_COMMAND "$LOCAL_FILE"; then
         echo "Adding gccr to the list of commands..."
-        printf $TEMP_BASHRC_COMMAND >> $LOCAL_FILE
+        printf "$TEMP_BASHRC_COMMAND" >> "$LOCAL_FILE"
     else
         echo "UPDATING PREVIOUS INSTALLATION..."
     fi
     
-    cp $TEMP_GCCR $LOCAL_DIR
+    cp "$TEMP_GCCR $LOCAL_DIR"
     echo "gccr installed successfully"
         
 else 
@@ -43,13 +43,13 @@ while $flag;
 do
 	if [[ $input == "Y" || $input == "y" ]]; then
         rm -r -f -- "$TEMP_DIR"
-        flag = true
+        flag=true
         echo "Installation folder removed"
     elif [[ $input == "N" || $input == "n" ]]; then
-        flag = true
+        flag=true
         echo "Installation folder not removed"
     else
-        flag = false
+        flag=false
         echo "Option not valid.\nDo you wanna delete the installation folder: ''$TEMP_DIR''? [Y/n]"
     fi
 done
