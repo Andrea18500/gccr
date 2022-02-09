@@ -3,9 +3,9 @@
 # Andrea Tosi   05/10/21    v0.2
 
 # Installer for gccr
-LOCAL_DIR="~/bash_scripts"
-LOCAL_FILE="~/.bashrc"
-TEMP_DIR=$(pwd)
+LOCAL_DIR="$HOME/bash_scripts"
+LOCAL_FILE="$HOME/.bashrc"
+TEMP_DIR="$PWD"
 TEMP_GCCR="gccr/gccr.sh"
 TEMP_BASHRC_COMMAND="\n\n# Alias for the shortcut gccr\nalias gccr='bash ~/bash_scripts/gccr.sh'"
 flag=true
