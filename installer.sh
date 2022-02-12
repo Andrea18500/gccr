@@ -53,4 +53,6 @@ do
         echo "Option not valid. Do you wanna delete the installation folder (option suggested): ''$TEMP_DIR''? [Y/n]"
     fi
 done
-echo "gccr installed and updated. To complete the installation RESTART THE TERMINAL."
+echo "gccr installed and updated."
+echo "To complete the installation restart the terminal"
+exec bash
