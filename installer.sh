@@ -32,13 +32,13 @@ if [ -f "$LOCAL_FILE" ]; then
         echo "UPDATING PREVIOUS INSTALLATION..."
     fi
     cp "$TEMP_GCCR" "$LOCAL_DIR"
-    echo "gccr installed successfully"
+    echo "gccr installed successfully."
 else
     echo "Error: ''$LOCAL_FILE'' does not exist. Cannot continue."
     exit 1
 fi
 
-echo "Do you wanna delete the installation folder (option suggested) : ''$TEMP_DIR/gccr''? [Y/n]"
+echo "Do you wanna delete the installation folder (suggested) : ''$TEMP_DIR/gccr''? [Y/n]"
 read input
 
 while $flag;
@@ -46,17 +46,18 @@ do
 	if [[ $input == "Y" || $input == "y" ]]; then
         rm -r -f -- "$TEMP_DIR/gccr"
         flag=false
-        echo "Installation folder removed"
+        echo "Installation folder removed."
     elif [[ $input == "N" || $input == "n" ]]; then
         flag=false
-        echo "Installation folder not removed"
+        echo "Installation folder not removed."
     else
         flag=true
-        echo "Option not valid. Do you wanna delete the installation folder (option suggested): ''$TEMP_DIR''? [Y/n]"
+        echo "Option not valid."
+	echo "Do you wanna delete the installation folder (suggested): ''$TEMP_DIR''? [Y/n]"
     fi
 done
 echo ""
 echo "----------- GCCR SUCCESSFULLY INSTALLED/UPDATED --------------"
 echo ""
-echo "To complete the installation RESTART the terminal"
+echo "To complete the installation RESTART the terminal."
 exec $SHELL
