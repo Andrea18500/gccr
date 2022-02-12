@@ -27,10 +27,8 @@ if [ -f "$LOCAL_FILE" ]; then
     else
         echo "UPDATING PREVIOUS INSTALLATION..."
     fi
-    
     cp "$TEMP_GCCR" "$LOCAL_DIR"
-    echo "gccr installed successfully"
-        
+    echo "gccr installed successfully"  
 else 
     echo "Error: ''$LOCAL_FILE'' does not exist. Cannot continue."
     exit 1
@@ -55,4 +53,4 @@ do
 done
 echo "gccr installed and updated."
 echo "To complete the installation restart the terminal"
-exec bash
+exec $SHELL
