@@ -54,6 +54,7 @@ do
         flag=true
         echo "Option not valid."
 	echo "Do you wanna delete the installation folder (suggested): ''$TEMP_DIR''? [Y/n]"
+	read input
     fi
 done
 echo ""
