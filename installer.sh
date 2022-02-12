@@ -36,7 +36,7 @@ else
     exit 1
 fi
 
-echo "Do you wanna delete the installation folder : ''$TEMP_DIR/gccr''? [Y/n]"
+echo "Do you wanna delete the installation folder (option suggested) : ''$TEMP_DIR/gccr''? [Y/n]"
 read input
 
 while $flag;
@@ -50,7 +50,7 @@ do
         echo "Installation folder not removed"
     else
         flag=true
-        echo "Option not valid. Do you wanna delete the installation folder: ''$TEMP_DIR''? [Y/n]"
+        echo "Option not valid. Do you wanna delete the installation folder (option suggested): ''$TEMP_DIR''? [Y/n]"
     fi
 done
-echo "Installation completed."
+echo "gccr installed and updated. To complete the installation RESTART THE TERMINAL."
