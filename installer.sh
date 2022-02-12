@@ -9,7 +9,11 @@ TEMP_DIR="$PWD"
 TEMP_GCCR="gccr/gccr.sh"
 TEMP_BASHRC_COMMAND="\n\n# Alias for the shortcut gccr\nalias gccr='bash ~/bash_scripts/gccr.sh'"
 flag=true
-
+echo ""
+echo "---------------- GCCR SUCCESSFULLY DOWNLOADED ----------------"
+echo ""
+echo "----------------- GCCR INSTALLATION STARTED -----------------"
+echo ""
 if [ -d "$LOCAL_DIR" ]; then
     echo "Installation files exist. Checking for possible errors..."
 else
@@ -51,6 +55,8 @@ do
         echo "Option not valid. Do you wanna delete the installation folder (option suggested): ''$TEMP_DIR''? [Y/n]"
     fi
 done
-echo "gccr installed and updated."
-echo "To complete the installation restart the terminal"
+echo ""
+echo "----------- GCCR SUCCESSFULLY INSTALLED/UPDATED --------------"
+echo ""
+echo "To complete the installation RESTART the terminal"
 exec $SHELL
