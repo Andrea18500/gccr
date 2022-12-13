@@ -28,6 +28,7 @@ Example
 ```
 gccr path/to/name_of_your_file.c +lm file_input.txt file_output.txt
 ```
+In this example we added the ```-lm``` flag to tell *the compiler* we want to use the math library and the rest of the arguments (the two files) wil be passed to *the program*.
 
 ## Issues
 - v0.3
